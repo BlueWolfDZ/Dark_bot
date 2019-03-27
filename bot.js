@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 client.on('ready', () => {
-  client.user.setGame(` By M3a4x #4272 .`,'https://www.twitch.tv/mjrmqm');
+  client.user.setGame(` By M3a4x #42BlùeWolf, Va#0005 .`,'https://www.twitch.tv/mjrmqm');
   console.log('---------------');
   console.log('Dark-bot Bot Is Online')
   console.log('---------------')
@@ -13,7 +13,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '*help') {
+if (message.content === '-help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("**:globe_with_meridians: الأوامر العامه**","** **")
@@ -37,7 +37,7 @@ client.on('message', message => {
   .addField("**Server: **" , client.guilds.size)
   message.channel.sendEmbed(embed);
     }
-if (message.content === '*help') {
+if (message.content === '-help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
       .addField("**:radioactive: أوامر الأداره**","** **")
@@ -126,7 +126,7 @@ if (message.author.bot) return;
     }
 
 });
-var prefix = "*";
+var prefix = "-";
 
 client.on('message', message => {
     if (message.author.bot) return;
@@ -153,7 +153,7 @@ client.on('message', message => {
 
 
 });
-var prefix = "*";
+var prefix = "-";
 client.on('message', message => {
     if(message.content == prefix + 'server') {
         var servername = message.guild.name
@@ -181,7 +181,7 @@ client.on('message', message => {
     }
 });
 client.on("message", message => {
-    var prefix = "*";
+    var prefix = "-";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -236,7 +236,7 @@ if(message.content.split(' ')[0] == '*bc') {
   .setThumbnail(message.author.avatarURL)  
   .setAuthor(message.author.username)
 .setDescription("معلومات عن الحــساب")
-               .setFooter(`Dark-bot Bot.`, '')
+               .setFooter(`BLue-bot Bot.`, '')
   .setColor("#9B59B6")
   .addField("اســـم الحســاب", `${message.author.username}`)
   .addField('كود الحساب الخاص', message.author.discriminator)
@@ -266,7 +266,7 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-if (message.content === "*help") {
+if (message.content === "-help") {
 message.reply("**Done | تــم**")
 message.reply("**تم ارسال اوامر البوت في الخاص**")
 message.react("📩")
@@ -291,7 +291,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : M3a4x ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` كل عام وانتم بخير | *help  `,"http://twitch.tv/mjrmqm")
+client.user.setGame(` كل عام وانتم بخير | -help  `,"http://twitch.tv/mjrmqm")
 client.user.setStatus("dnd")
 });
 client.on("guildCreate", guild => {
@@ -444,7 +444,7 @@ client.on('guildMemberAdd', member => {
                      
                                      .addField(' الـسيرفر', `${member.guild.name}`,true)
                                        
-     .setFooter("Bot By M3a4x")
+     .setFooter("Bot By BlueWolf")
         .setTimestamp()
    
       channel.sendEmbed(embed);
